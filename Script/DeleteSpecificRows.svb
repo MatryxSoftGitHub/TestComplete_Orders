@@ -1,0 +1,43 @@
+﻿Sub DeleteOrders
+  Dim orders, Item, wndAfx, listView,btnYes, editCustomerName, i, j, k,l, header, Count 
+
+  Set orders = Aliases.Orders
+  Set wndAfx = orders.wndAfx
+  Set dlgNewOrder = orders.dlgNewOrder
+  'Call wndAfx.Activate
+  'Set listView = wndAfx.ListView
+  Set listView = orders.wndAfx.ListView
+  Set btnYes = orders.dlgOrders.btnYes
+  Set editCustomerName = dlgNewOrder.editCustomerName
+
+  Set header = listView.Header
+    For i =0 to header.wItemCount - 1
+      If header.wItem(i) = Project.Variables.DeleteOrders.SearchColumnName(0) Then
+         Log.Message(listView.wItem(i,0)) 
+         j = i
+      End If   
+  Next    
+  Count = listView.wItemCount
+  For l =0 to Project.Variables.DeleteOrders.RowCount - 1
+      Log.Message(l)
+      For k = 0 to Count - 1
+          If k<=Count-1 Then
+              'Log.Message(listView.wItem(k, j))
+              If listView.wItem(k, j)= Project.Variables.DeleteOrders.SearchItem(l) Then
+                 'Log.Message(listView.wItem(k, j))
+                 Call listView.ClickItem(k)
+                 Call listView.ClickItemR(k)
+                 Call listView.PopupMenu.Click("Delete order")
+                 Set btnYes = orders.dlgOrders.btnYes
+                 Call btnYes.ClickButton
+                 Count = listView.wItemCount
+                 'Exit For
+              End If
+           End If   
+      Next
+  Next
+  
+  
+  'Call listView.wItem(0,1)
+
+End Sub   

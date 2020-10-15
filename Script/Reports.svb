@@ -1,0 +1,6 @@
+﻿Sub Reports
+  Dim Path
+  ' Obtains the path to the current project suite’s file
+  Path = ProjectSuite.Path
+  Call Log.SaveResultsAs(Path & "\Report.mht", lsMHT)
+End Sub

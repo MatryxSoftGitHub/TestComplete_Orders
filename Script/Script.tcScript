@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="SingleOrder" />
+		<folder name="MultiipleOrders" />
+		<folder name="DeleteOrders">
+			<child name="DeleteSpecificRows" key="{CDFC7CD3-BF35-4A17-B225-6457704C1B73}" path="DeleteSpecificRows.svb" />
+		</folder>
+		<folder name="Utilities">
+			<child name="FileOperations" key="{6C0AC7FC-FEA5-41D4-A8C5-4571A024002D}" path="FileOperations.svb" />
+			<child name="Timer" key="{F3C70ADD-13AB-444C-9621-68FC6262550C}" path="Timer.svb" />
+			<child name="Properties" key="{374971E5-4CDD-4EDE-BD5A-96687DBEABE6}" path="Properties.svb" />
+			<child name="ImageCapture" key="{7FFDE5F5-E91E-4199-8D8C-4545D970F140}" path="ImageCapture.svb" />
+			<child name="Reports" key="{303B7E0B-D150-4136-80A7-D3C345D6A06D}" path="Reports.svb" />
+		</folder>
+		<folder name="Orders">
+			<child name="SingleOrders" key="{CC3465D1-3742-400E-8F63-44A6A2934E68}" path="SingleOrders.svb" />
+			<child name="MultipleOrders" key="{8CD7D4EA-605B-4FCD-B658-46DCE3857D8C}" path="MultipleOrders.svb" />
+			<child name="NavigateNewOrderAndEnterDelailsMultipleTimes" key="{1A3CC880-12DA-4019-90BD-C1EF548C9E8A}" path="NavigateNewOrderAndEnterDelailsMultipleTimes.svb" />
+			<child name="NavigateNewOrderAndEnterDetailsAndSaveFile" key="{E2805BFC-10DD-478C-9CEC-2C9A6AD80EF0}" path="NavigateNewOrderAndEnterDetailsAndSaveFile.svb" />
+			<child name="OpenExistFileAndDeleteSpecificRows" key="{F827B815-734D-484D-B19F-4347E4D5A7D4}" path="OpenExistFileAndDeleteSpecificRows.svb" />
+			<child name="OpenOrdersFile" key="{C2724D88-8DE4-416C-B353-2B4E1C83E0EC}" path="OpenOrdersFile.svb" />
+			<child name="SaveFile" key="{6A249FD5-B1D9-4096-A8FF-0461EE0F21BC}" path="SaveFile.svb" />
+			<child name="Verification" key="{F1B16151-89A7-46BC-8D8D-FFECF494160E}" path="Verification.svb" />
+		</folder>
+	</children>
+</Root>

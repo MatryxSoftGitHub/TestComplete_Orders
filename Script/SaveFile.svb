@@ -1,0 +1,25 @@
+﻿'USEUNIT FileOperations
+Sub SaveFile
+  Dim orders, wndAfx, dlgNewOrder,  CurrentDate, sFile, Edit, dlgSave, dtExpirationDate 
+    
+  'Call TestedApps.Orders.Run(1, True
+  
+  'Set Objects in variables
+  Set orders = Aliases.Orders
+  Set wndAfx = orders.wndAfx
+  Set dlgNewOrder = orders.dlgNewOrder
+  Set dlgSave = orders.dlgSave
+  'Set Edit = dlgSave.cbxFileName.Fil
+  Set dtExpirationDate =dlgNewOrder.dtExpirationDate
+ 
+  Call wndAfx.MainMenu.Click("File|Save As...")  
+  Call FileOperations.CurrentDateTimeWithoutSpace(CurrentDate)
+  sFile = Project.Variables.OrdersTable.FilePath(0)+"Order"+CurrentDate+".tbl"
+  'Call Edit.SetText(sFile)
+  Call orders.dlgSave.SaveFile(sFile)
+  'Call dlgSave.btnSave.ClickButton
+  'Delay(5000)
+  Call FileOperations.FileExists(sFile)
+  End Sub
+
+

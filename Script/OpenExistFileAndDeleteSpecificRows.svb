@@ -1,0 +1,10 @@
+﻿'USEUNIT DeleteSpecificRows
+'USEUNIT FileOperations
+'USEUNIT OpenOrdersFile
+Sub DeleteOrders
+  Call OpenOrdersFile.OpenOrdersFile
+  Call DeleteSpecificRows.DeleteOrders
+  
+  AppName = Project.Variables.AppName
+  Call Functions.Close_WindowsApp(AppName)
+End Sub

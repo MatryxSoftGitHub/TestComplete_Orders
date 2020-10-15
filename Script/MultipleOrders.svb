@@ -1,0 +1,14 @@
+﻿'USEUNIT FileOperations
+'USEUNIT NavigateNewOrderAndEnterDelailsMultipleTimes
+'USEUNIT SaveFile
+Sub SingleOrder
+  'Invoke the Orders Application
+  AppLocation =Project.Variables.AppLocation
+  Call FileOperations.LaunchDesktopApplicaton(AppLocation)
+  
+  Call NavigateNewOrderAndEnterDelailsMultipleTimes.MultipleOrders
+  Call SaveFile.SaveFile 
+  'Close the Orders application
+  AppName = Project.Variables.AppName
+  Call FileOperations.Close_WindowsApp(AppName)
+End Sub

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{06BCE19D-04E1-4943-87DA-77650601B74D}">
+	<children>
+		<child name="Orders" key="{20CB52EF-59B6-4447-A464-5125B3832ED1}" path="Orders.mds" />
+	</children>
+	<testItems key="{DC691104-820A-4A8A-8151-579D5CB6AA02}">
+		<children>
+			<testItem key="{20CB52EF-59B6-4447-A464-5125B3832ED1}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{1F0B67A6-C5D7-4118-A6DE-2D2E16585D86}" />
+	<analysis key="{567751B4-8E2A-422D-AE99-9A5527783D3A}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="False" />
+	</extender>
+</Root>

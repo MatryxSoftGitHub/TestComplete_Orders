@@ -1,0 +1,25 @@
+﻿Sub OpenOrdersFile
+  Dim orders, wndAfx, dlgNewOrder,  CurrentDate, sFile, Edit, dlgSave, dtExpirationDate, i, j, k,l, header, Count  
+    
+  Call TestedApps.Orders.Run(1, True)
+  
+  'Set Objects in variables
+  Set orders = Aliases.Orders
+  Set wndAfx = orders.wndAfx
+  Set dlgNewOrder = orders.dlgNewOrder
+  Set dlgSave = orders.dlgSave
+  Set dlgOpen = orders.dlgOpen
+  'Set btnOpen = dlgOpen.btnOpen
+  'Set Edit = dlgSave.cbxFileName.ComboBox.Edit
+  Set dtExpirationDate =dlgNewOrder.dtExpirationDate
+ 
+  Call wndAfx.MainMenu.Click("File|Open...")  
+  
+  sFile = Project.Variables.DeleteOrders.FileLocation(0)
+  Call orders.dlgOpen.OpenFile(sFile)
+  'Call Edit.SetText(sFile)
+  
+  'Call dlgOpen.btnOpen.ClickButton
+
+
+  End Sub

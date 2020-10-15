@@ -1,0 +1,15 @@
+﻿'USEUNIT FileOperations
+'USEUNIT NavigateNewOrderAndEnterDetailsAndSaveFile
+'USEUNIT SaveFile
+Sub SingleOrder
+  'Invoke the Orders Application
+  AppLocation =Project.Variables.AppLocation
+  Call FileOperations.LaunchDesktopApplicaton(AppLocation)
+  
+  Call NavigateNewOrderAndEnterDetailsAndSaveFile.Test1
+  'Call NavigateNewOrderAndEnterDetailsAndSaveFile
+  Call SaveFile.SaveFile 
+  'Close the Order5s application
+  AppName = Project.Variables.AppName
+  Call FileOperations.Close_WindowsApp(AppName)
+End Sub

@@ -1,0 +1,79 @@
+﻿Sub Test1
+  'Dim orders
+  'Dim listView
+  'Dim dlgEditOrder
+  'Dim editState
+  'Set orders = Aliases.Orders
+  'Set listView = orders.wndAfx.ListView
+  Log.Message(Project.Variables.OrdersTable.RowCount)
+  Log.Message(Project.Variables.OrdersTable.CousomerNumber(0))
+  'Log.Message(Project.Variables.OrdersTable.Quantity(1,0))
+  'For i=0 to Project.Variables.editStree.RowCount -1
+     ' Log.Message(Project.Variables.editStree(0,i))
+ ' Next    
+  'Log.Message(Project.Variables.editStree.ColumnCount)
+  'Log.Message(listView.wItemCount)
+  
+  'Log.Message(listView.wColumnCount)
+  'Log.Message(listView.wItemCount)
+  'listViewObj.ClickItem(0, 3)
+  'Dim header
+  'Set listView = wndAfx.ListView
+  'Set header = listView.Header
+  'Log.Message(header.wItemCount)   'header Column Names count
+  'Log.Message(header.wItem(0))      'Fetching first Column Name
+ 
+
+  'Log.Message(listView.wColumnCount)   'Column Count
+  'Log.Message(listView.wGroupCount)
+  'Log.Message(listView.wItemCount)  'Row count
+End Sub
+
+Sub GetListItemSample
+'  Dim str, i, List
+'
+ ' str = "0;1;1;2;3;5;8;13;21;34"
+  'aqString.ListSeparator = ";"
+'
+ ' For i = 0 to aqString.GetListLength(str) - 1
+  '  List = aqString.GetListItem(str, i)
+  'Next
+  'Log.Message(List)
+End Sub
+Sub AddListItemSample
+ ' Dim str, str1
+'
+ ' str = "The fox jumps over the dog"
+  'aqString.ListSeparator = " "
+  'Log.Message(aqString.GetListLength(str))
+  'Log.Message(str(1))
+  'Log.Message str
+
+'  str1 = aqString.AddListItem(str1, str(1), 1)
+ ' Log.Message str1
+End Sub
+
+
+
+
+
+Sub Test2
+  Dim orders
+  Dim wndAfx
+  Dim listView
+  Dim btnYes
+  Set orders = Aliases.Orders
+  Set wndAfx = orders.wndAfx
+  Call wndAfx.Activate
+  Set listView = wndAfx.ListView
+  Call listView.ClickItem(1)
+  Call listView.ClickItemR(1)
+  Call listView.PopupMenu.Click("Delete order")
+  Set btnYes = orders.dlgOrders.btnYes
+  Call btnYes.ClickButton
+  'Call listView.ClickItem("Naresh", "MyMoney")
+  'Call listView.wItem(1)
+  'Call wndAfx.MainMenu.Click("Orders|Delete order")
+  'Call btnYes.ClickButton
+
+End Sub

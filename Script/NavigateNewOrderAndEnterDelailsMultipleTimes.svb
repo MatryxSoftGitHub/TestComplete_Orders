@@ -1,0 +1,58 @@
+﻿'USEUNIT FileOperations
+Sub MultipleOrders
+  Dim orders, wndAfx, dlgNewOrder, editCustomerName,editStreet, editCity, editState, editZip, editCardNr,i, j, Item,  CurrentDate, sFile,listView, editQuantity, dtExpirationDate 
+    
+  'Call TestedApps.Orders.Run(1, True
+  
+  'Set Objects in variables
+  Set orders = Aliases.Orders
+  Set wndAfx = orders.wndAfx
+  Set dlgNewOrder = orders.dlgNewOrder
+  Set editCustomerName = dlgNewOrder.editCustomerName
+  Set editQuantity = dlgNewOrder.editQuantity
+  Set editStreet = dlgNewOrder.editStreet
+  Set editCity = dlgNewOrder.editCity
+  Set editState = dlgNewOrder.editState
+  Set editCardNr = dlgNewOrder.editCardNr
+  Set editZip = dlgNewOrder.editZip
+  Set dlgSave = orders.dlgSave
+  'Set Edit = dlgSave.cbxFileName.ComboBox.Edit
+  Set dtExpirationDate =dlgNewOrder.dtExpirationDate
+
+
+  'Log.Message(Project.Variables.OrdersTable.RowCount)
+  For j = 0 to Project.Variables.OrdersTable.RowCount - 1
+      Call wndAfx.MainMenu.Click("Orders|New order...")
+      If dlgNewOrder.WaitProperty("Enabled", True, 2000) Then
+         Log.Message("Navigated to New Order successfully")
+      Else
+         Log.Message("Failed to navigate New Order")
+      End If
+      Call editQuantity.SetText(Project.Variables.OrdersTable.Quantity(j))
+  
+      Count = dlgNewOrder.cbxProduct.wItemCount
+    
+      For i = 0 to Count - 1
+          Item = dlgNewOrder.cbxProduct.wItem(i)
+          'Log.Message(Item)
+          If Item = Project.Variables.OrdersTable.Product(j) Then
+              Call dlgNewOrder.cbxProduct.ClickItem(Item)
+              CAll Delay(1000)
+              Log.Message(Item+" is selecxted successfully into Product popup list")
+              Exit For
+          End If
+      Next
+      Call editCustomerName.SetText(Project.Variables.OrdersTable.CousomerNumber(j))
+      Call editStreet.SetText(Project.Variables.OrdersTable.Street(j))
+      Call editCity.SetText(Project.Variables.OrdersTable.City(j))
+      Call editState.SetText(Project.Variables.OrdersTable.State(j))
+      Call editZip.SetText(Project.Variables.OrdersTable.Zip(j))
+      dtExpirationDate.wDate = (Project.Variables.OrdersTable.Exp_Date(j))
+      Call dlgNewOrder.radioMasterCard.ClickButton
+      Call editCardNr.SetText(Project.Variables.OrdersTable.CardNumber(j))
+  
+      dlgNewOrder.btnOK.ClickButton
+  Next
+
+End Sub
+

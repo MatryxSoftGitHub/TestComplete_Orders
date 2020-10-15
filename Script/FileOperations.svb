@@ -1,0 +1,53 @@
+﻿Sub LaunchDesktopApplicaton(AppLocation)
+
+  DbgServices.LaunchApplication(AppLocation)
+  Res = Sys.Process("Orders").Exists
+   
+  ' Checks whether Notepad has started successfully
+  If Res Then
+    Log.Message("Order application has been started successfully.")
+  Else
+    Log.Message("Order application hasn't been started.")
+  End If
+    
+End Sub
+
+Sub Close_WindowsApp(AppName)
+  Dim proces
+  ' Obtains the notepad.exe process
+  Set proces = Sys.Process(AppName)
+  ' Closes the process
+  proces.Close
+  ' Checks whether the process is closed
+  If proces.Exists Then
+    ' Terminates the process
+    proces.Terminate
+  End If
+End Sub
+
+Sub CurrentDateTimeWithoutSpace(Dt)
+   Dim currentDateAndTime
+
+  currentDateAndTime = aqDateTime.Now
+  
+  'Log.Message(currentDateAndTime)
+  Dt= aqConvert.DateTimeToFormatStr(currentDateAndTime, "%m%d%Y%H%M%S")
+End Sub
+
+Sub CheckObjIsPresentOrNot(ObjectsNames)
+    If ObjectsNames.WaitProperty("Enabled", True, 2000) Then
+       Log.Message(ObjectsNames+"is enabled")
+    Else
+       Log.Message(ObjectsNames+"is disabled")
+    End If
+  
+End Sub
+
+Sub FileExists(sPath)
+  Delay(10000)
+  If Not aqFileSystem.Exists(sPath) Then
+       Log.Message("Filed to save in this location "+sPath)
+    Else
+       Log.Message("File Save successfully in this location "+sPath)  
+  End If 
+End Sub

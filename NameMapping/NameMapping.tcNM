@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{F9FC75E4-6692-4048-8283-31EE0FD209A1}">
+				<TypeInfo Item0="{B8D74E28-8A9A-4A50-A552-1A30218ED33A}" />
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="Orders" Key="{CE4A6583-37CE-46FA-AEAC-831E298F091E}">
+						<TypeInfo Item0="{F5E179AF-6796-4707-878E-E104273FAF5E}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="Orders" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndAfx" Key="{8BE46223-B89E-4E2F-AEAF-E7E314FFFF6B}">
+								<Image FileName="332599887" Left="0" Top="0" Right="1936" Bottom="1056" />
+								<TypeInfo Item0="{8831B2AD-F2A5-4F94-B401-E49547301B51}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Afx:00400000:b*" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="toolbar" Key="{55FF8BD1-A639-4AD1-81A6-FD0312CB233E}">
+										<Image FileName="-1008764321" Left="8" Top="51" Right="1432" Bottom="75" />
+										<TypeInfo Item0="{E78A5556-F7F5-4C9E-9614-43570E18B811}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ToolbarWindow32" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="ListView" Key="{43F06B84-64B8-4232-B3D8-968298AAFCBB}">
+										<Image FileName="234449065" Left="0" Top="67" Right="1680" Bottom="991" />
+										<TypeInfo Item0="{7CA9C3E5-1441-418F-9A86-ECDCED0FC509}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="SysListView32" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Header" Key="{893899FF-AC63-4BDD-B735-0795AD6C5168}">
+												<Image FileName="922597320" Left="10" Top="77" Right="1250" Bottom="96" />
+												<TypeInfo Item0="{7CA9C3E5-1441-418F-9A86-ECDCED0FC509}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="SysHeader32" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgNewOrder" Key="{25B042E8-A3D1-48EF-8FD6-4F5C3C595018}">
+								<Image FileName="767861382" Left="0" Top="0" Right="471" Bottom="481" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="New order" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="editCustomerName" Key="{226DF022-3F25-42BE-9636-9612AE460820}">
+										<Image FileName="-743129104" Left="113" Top="211" Right="452" Bottom="234" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="5" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editStreet" Key="{2D8012F5-55E2-492F-97F9-0EC6204A1F2A}">
+										<Image FileName="1136444179" Left="113" Top="244" Right="316" Bottom="267" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="6" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editCity" Key="{D1063FD1-E841-4591-B2D2-98DFE0A82898}">
+										<Image FileName="1121011498" Left="360" Top="244" Right="452" Bottom="267" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="7" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editState" Key="{DD92CBA8-B638-44D8-99C3-E75EE736E81D}">
+										<Image FileName="1101416766" Left="113" Top="280" Right="316" Bottom="303" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="8" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editZip" Key="{537DF3E2-152A-442B-AFD9-CCB85AB4870E}">
+										<Image FileName="473533283" Left="360" Top="278" Right="452" Bottom="301" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="9" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editCardNr" Key="{5D790F49-329B-47C7-A466-2B26A7D53F46}">
+										<Image FileName="-824381683" Left="113" Top="356" Right="412" Bottom="379" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="10" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="cbxProduct" Key="{424C0D74-10B3-414D-A410-8F9F5680DC6C}">
+										<Image FileName="767861382" Left="93" Top="50" Right="369" Bottom="71" />
+										<TypeInfo Item0="{DF1E4637-3294-44E8-98B2-D923EB0E1F29}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ComboBox" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="radioAmericanExpress" Key="{534387A4-CC5F-4230-9E21-8999250C83AC}">
+										<Image FileName="492699585" Left="279" Top="325" Right="387" Bottom="341" />
+										<TypeInfo Item0="{9F16B7F2-80A1-467A-B197-9316190536A9}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="American Express" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="btnOK" Key="{D646C170-D68C-400C-A605-6495285B096F}">
+										<Image FileName="811904725" Left="158" Top="444" Right="233" Bottom="467" />
+										<TypeInfo Item0="{11AD0045-1358-461A-A344-6EE1244746EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="OK" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="radioMasterCard" Key="{05E057B7-D94B-450C-AA7E-E2CDCEE316EA}">
+										<Image FileName="-62505112" Left="179" Top="325" Right="260" Bottom="341" />
+										<TypeInfo Item0="{9F16B7F2-80A1-467A-B197-9316190536A9}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="Master Card" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="dtExpirationDate" Key="{8EDD67F6-EA7C-47F2-8F2E-F55D17BAE310}">
+										<Image FileName="-734435351" Left="113" Top="393" Right="263" Bottom="417" />
+										<TypeInfo Item0="{06E672ED-A512-422E-AAC6-10D7A9BA3E41}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="SysDateTimePick32" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="2" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="editQuantity" Key="{426BD2A8-79E8-44EB-A9CD-811F675B14FB}">
+										<Image FileName="1627540434" Left="93" Top="88" Right="137" Bottom="111" />
+										<TypeInfo Item0="{D197DC74-2B9E-44FC-9901-4A14AEE49C97}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="dtDate" Key="{96CE36FC-4EA4-4C40-8BFD-1CB1B05E1CB2}">
+										<Image FileName="-1088680845" Left="113" Top="179" Right="263" Bottom="203" />
+										<TypeInfo Item0="{06E672ED-A512-422E-AAC6-10D7A9BA3E41}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="SysDateTimePick32" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="radioVISA" Key="{40B0DC74-0B29-423D-B519-5A74D6604594}">
+										<Image FileName="-2016478961" Left="113" Top="325" Right="161" Bottom="341" />
+										<TypeInfo Item0="{8DCDFB14-7EFF-40C0-BC9E-286034A3632A}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="VISA" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgOrders" Key="{7DFB639B-D9EB-4C60-8EBE-39AC7F95A6F5}">
+								<Image FileName="-314696718" Left="0" Top="0" Right="290" Bottom="149" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Orders" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="btnNo" Key="{6CF1F817-7390-439B-8C90-A052BD98C1F5}">
+										<Image FileName="-314696718" Left="113" Top="114" Right="188" Bottom="137" />
+										<TypeInfo Item0="{11AD0045-1358-461A-A344-6EE1244746EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="&amp;No" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="btnYes" Key="{4B06277C-9544-4FB2-B882-E27EB3436996}">
+										<Image FileName="-217111530" Left="39" Top="114" Right="114" Bottom="137" />
+										<TypeInfo Item0="{11AD0045-1358-461A-A344-6EE1244746EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="&amp;Yes" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgEditOrder" Key="{2A0DCC83-2B3A-4335-A06C-CF319836B30A}">
+								<Image FileName="-1350366669" Left="0" Top="0" Right="471" Bottom="481" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Edit order" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="editState" Key="{D3433791-C6D7-484F-8D17-8909BC42B01B}">
+										<Image FileName="-1350366669" Left="113" Top="280" Right="316" Bottom="303" />
+										<TypeInfo Item0="{8ABB7891-11EE-476A-A31A-067866837B71}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Edit" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="8" Type="0" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="btnOK" Key="{C5E76332-41F0-45B1-8268-4E64307612E4}">
+										<Image FileName="1360358186" Left="158" Top="444" Right="233" Bottom="467" />
+										<TypeInfo Item0="{11AD0045-1358-461A-A344-6EE1244746EC}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="OK" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgOpen" Key="{987A5DB4-0908-4473-9346-E5865F589FE6}">
+								<Image FileName="-1962379395" Left="0" Top="0" Right="561" Bottom="414" />
+								<TypeInfo Item0="{E7218DED-EC32-48B4-A624-3424160D0C4F}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Open" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="btnOpen" Key="{423B18C4-B956-400A-BC7B-96D0008C27A2}">
+										<Image FileName="-1962379395" Left="477" Top="354" Right="552" Bottom="377" />
+										<TypeInfo Item0="{574EA1EC-523E-4788-A7DD-08487D963108}" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Button" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="&amp;Open" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgSave" Key="{F99EFF06-2F88-4E1A-966D-CC9C0A2DF097}">
+								<Image FileName="-776772823" Left="0" Top="0" Right="561" Bottom="414" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Save" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="explorer" Key="{E799679E-DD30-4077-A6B0-73A07E613FE3}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="explorer" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndShell_TrayWnd" Key="{900F1738-E5CD-4102-B577-08A65F09F26C}">
+								<Image FileName="1382520132" Left="0" Top="0" Right="1920" Bottom="40" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Shell_TrayWnd" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="ReBarWindow32" Key="{38CA478A-9C96-40F7-A831-C0D50452CB90}">
+										<Image FileName="1382520132" Left="486" Top="0" Right="1689" Bottom="40" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="ReBarWindow32" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="MSTaskSwWClass" Key="{55BE548F-FA90-4DFA-957B-84BF693E3C60}">
+												<Image FileName="1382520132" Left="488" Top="0" Right="1689" Bottom="40" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="MSTaskSwWClass" />
+													</Property>
+													<Property Name="WndCaption">
+														<Value Value="Running applications" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="MSTaskListWClass" Key="{6CC3ADB1-89B1-482C-A097-2705557289BB}">
+														<Image FileName="1382520132" Left="488" Top="0" Right="1689" Bottom="40" />
+														<TypeInfo Item0="{C1E8BF65-E428-424B-8621-0CEA44BC6959}" />
+														<Properties>
+															<Property Name="WndClass">
+																<Value Value="MSTaskListWClass" />
+															</Property>
+															<Property Name="WndCaption">
+																<Value Value="Running applications" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="Orders" Owner="{CE4A6583-37CE-46FA-AEAC-831E298F091E}">
+			<Child Name="wndAfx" Owner="{8BE46223-B89E-4E2F-AEAF-E7E314FFFF6B}">
+				<Child Name="toolbar" Owner="{55FF8BD1-A639-4AD1-81A6-FD0312CB233E}" />
+				<Child Name="ListView" Owner="{43F06B84-64B8-4232-B3D8-968298AAFCBB}">
+					<Child Name="Header" Owner="{893899FF-AC63-4BDD-B735-0795AD6C5168}" />
+				</Child>
+			</Child>
+			<Child Name="dlgNewOrder" Owner="{25B042E8-A3D1-48EF-8FD6-4F5C3C595018}">
+				<Child Name="editCustomerName" Owner="{226DF022-3F25-42BE-9636-9612AE460820}" />
+				<Child Name="editStreet" Owner="{2D8012F5-55E2-492F-97F9-0EC6204A1F2A}" />
+				<Child Name="editCity" Owner="{D1063FD1-E841-4591-B2D2-98DFE0A82898}" />
+				<Child Name="editState" Owner="{DD92CBA8-B638-44D8-99C3-E75EE736E81D}" />
+				<Child Name="editZip" Owner="{537DF3E2-152A-442B-AFD9-CCB85AB4870E}" />
+				<Child Name="editCardNr" Owner="{5D790F49-329B-47C7-A466-2B26A7D53F46}" />
+				<Child Name="cbxProduct" Owner="{424C0D74-10B3-414D-A410-8F9F5680DC6C}" />
+				<Child Name="radioAmericanExpress" Owner="{534387A4-CC5F-4230-9E21-8999250C83AC}" />
+				<Child Name="btnOK" Owner="{D646C170-D68C-400C-A605-6495285B096F}" />
+				<Child Name="radioMasterCard" Owner="{05E057B7-D94B-450C-AA7E-E2CDCEE316EA}" />
+				<Child Name="dtExpirationDate" Owner="{8EDD67F6-EA7C-47F2-8F2E-F55D17BAE310}" />
+				<Child Name="editQuantity" Owner="{426BD2A8-79E8-44EB-A9CD-811F675B14FB}" />
+				<Child Name="dtDate" Owner="{96CE36FC-4EA4-4C40-8BFD-1CB1B05E1CB2}" />
+				<Child Name="radioVISA" Owner="{40B0DC74-0B29-423D-B519-5A74D6604594}" />
+			</Child>
+			<Child Name="dlgOrders" Owner="{7DFB639B-D9EB-4C60-8EBE-39AC7F95A6F5}">
+				<Child Name="btnNo" Owner="{6CF1F817-7390-439B-8C90-A052BD98C1F5}" />
+				<Child Name="btnYes" Owner="{4B06277C-9544-4FB2-B882-E27EB3436996}" />
+			</Child>
+			<Child Name="dlgEditOrder" Owner="{2A0DCC83-2B3A-4335-A06C-CF319836B30A}">
+				<Child Name="editState" Owner="{D3433791-C6D7-484F-8D17-8909BC42B01B}" />
+				<Child Name="btnOK" Owner="{C5E76332-41F0-45B1-8268-4E64307612E4}" />
+			</Child>
+			<Child Name="dlgOpen" Owner="{987A5DB4-0908-4473-9346-E5865F589FE6}">
+				<Child Name="btnOpen" Owner="{423B18C4-B956-400A-BC7B-96D0008C27A2}" />
+			</Child>
+			<Child Name="dlgSave" Owner="{F99EFF06-2F88-4E1A-966D-CC9C0A2DF097}" />
+		</Child>
+		<Child Name="explorer" Owner="{E799679E-DD30-4077-A6B0-73A07E613FE3}">
+			<Child Name="wndShell_TrayWnd" Owner="{900F1738-E5CD-4102-B577-08A65F09F26C}">
+				<Child Name="ReBarWindow32" Owner="{38CA478A-9C96-40F7-A831-C0D50452CB90}">
+					<Child Name="MSTaskSwWClass" Owner="{55BE548F-FA90-4DFA-957B-84BF693E3C60}">
+						<Child Name="MSTaskListWClass" Owner="{6CC3ADB1-89B1-482C-A097-2705557289BB}" />
+					</Child>
+				</Child>
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>
